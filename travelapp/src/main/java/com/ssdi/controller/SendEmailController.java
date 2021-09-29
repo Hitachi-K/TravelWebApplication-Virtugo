@@ -67,22 +67,7 @@ public class SendEmailController {
 		for (Integer planList : listId) {
 			list.add(planService.getPlansByPlaceId(planList));
 		}
-		// List<Plan> list = planService.getPlansById(plan.getUserId());
-
-		/*
-		 * for(Plan planDetails:list){
-		 * 
-		 * body.append("<br />");
-		 * body.append("Please find your travel plans below");
-		 * body.append("<br />"); body.append("<br />");
-		 * body.append("<b>Plan  : </b>"+planDetails.getPlace());
-		 * body.append(" <b>Address  :</b> "+planDetails.getAddress());
-		 * body.append(" <b>Temperature  :</b> "+planDetails.getClimate());
-		 * body.append(" <b>Hotel   :</b> "+planDetails.getHotel());
-		 * body.append(" <b>Date Added  :</b>  "+planDetails.getDateAdded());
-		 * body.append(" <b>Date of Travel   :</b> "+planDetails.getDateTravel()
-		 * ); body.append("<br />"); body.append("<br />"); }
-		 */
+		
 		body.append("<html>");
 		body.append("<body><head><style>" + "table, th, td {" + "	border: 1px solid black;"
 				+ "	border-collapse: collapse;" + "}" + "</style></head>");
